@@ -44,7 +44,7 @@ console.log(restuarant);
           <>
                 <Row className="my-3">
                 <Col md={3}>
-                <Image className="border rounded" src={restuarant.photograph}fluid>
+                <Image className="border rounded mx-4" src={restuarant.photograph}fluid>
                 </Image>
                 </Col>
                 <Col className="mx-5" md={7} >

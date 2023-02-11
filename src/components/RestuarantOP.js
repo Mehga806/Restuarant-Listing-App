@@ -4,6 +4,10 @@ import { ModalBody } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import ListGroup from 'react-bootstrap/ListGroup';
+import Payment from './Payment';
+import { Link } from 'react-router-dom';
+//import Button from 'react-bootstrap/Button';
+
 
 
 function RestuarantOP({ op }) {
@@ -32,6 +36,10 @@ function RestuarantOP({ op }) {
       <ListGroup.Item>Friday : {op.Friday}</ListGroup.Item>
       <ListGroup.Item>Saturday : {op.Saturday}</ListGroup.Item>
       <ListGroup.Item>Sunday : {op.Sunday}</ListGroup.Item>
+      <Link to={'/Payment'}>
+      <Button className=' mx-2  my-3' variant="outline-success">Place Order</Button>{' '}
+      </Link>
+
      
     </ListGroup>
     </ModalBody>
